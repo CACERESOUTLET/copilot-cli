@@ -73,6 +73,35 @@ Each time you submit a prompt to GitHub Copilot CLI, your monthly quota of premi
 
 For more information about how to use the GitHub Copilot CLI, see [our official documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli).
 
+## 🎯 Improving Copilot's Intelligence
+
+You can enhance GitHub Copilot's effectiveness by customizing its behavior for your specific needs:
+
+### Custom Instructions
+
+Create a `copilot-instructions.md` file in your repository's `.github` directory to provide context-specific guidance to Copilot when working with your codebase. This file can include:
+- Project-specific coding conventions
+- Architecture guidelines
+- Common patterns used in your codebase
+
+### Custom Agents
+
+Define specialized agents for different tasks by creating `.agent.md` files in:
+- `~/.copilot/agents` (user-level configuration)
+- `.github/agents` in your repository (repository-level configuration)
+- Your organization's `.github` repository (organization-level configuration)
+
+Use the `/agent` slash command to invoke a specific agent, or let Copilot automatically select the appropriate agent based on your task.
+
+### MCP Server Configuration
+
+Extend Copilot's capabilities by configuring Model Context Protocol (MCP) servers:
+
+1. Use `/mcp add` to interactively add new MCP servers
+2. Configure servers manually in `~/.copilot/mcp-config.json`
+3. Use `--additional-mcp-config` flag to add temporary server configurations per session
+
+For more tips on the Copilot coding agent, see [the documentation](https://docs.github.com/copilot/customizing-copilot).
 
 ## 📢 Feedback and Participation
 
