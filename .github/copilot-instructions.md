@@ -27,8 +27,8 @@ When contributing to this repository:
 
 ## Technical Context
 
-- The CLI requires Node.js v22+ and npm v10+
-- Default model is Claude Sonnet 4.5 (configurable via `/model` command)
+- The CLI requires Node.js v22+ and npm v10+ (see README.md for specific version requirements)
+- Default model is configurable via the `/model` slash command
 - MCP server configuration is stored in `~/.copilot/mcp-config.json`
 - Session data is stored in `~/.copilot/session-state`
 
